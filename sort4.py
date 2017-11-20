@@ -2,7 +2,7 @@ from random import randint
 import time
 
 timer_1 = time.time()
-list = [randint(1, 100) for i in range(100)]
+list = [randint(1, 100) for i in range(100000)]
 
 
 def insertion_sort(mylist):
