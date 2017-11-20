@@ -59,6 +59,13 @@ timer_6 = time.time()
 time_3 = timer_6 - timer_5
 
 
-print('Insetion sort: time = ',time_1,';the list is sorted correctly = True')
-print('Selection sort: time = ',time_2,';the list is sorted correctly = True')
-print('Bubble sort: time = ',time_3,';the list is sorted correctly = True')
+def sort_test(func):
+    if func :
+        return True
+    else :
+        return False
+
+
+print('Insetion sort: time = ',time_1,';the list is sorted correctly =' + str(sort_test(insertion_sort(list))))
+print('Selection sort: time = ',time_2,';the list is sorted correctly =' + str(sort_test(selection_sort(list))))
+print('Bubble sort: time = ',time_3,';the list is sorted correctly =' + str(sort_test(bubble_sort(list))))
